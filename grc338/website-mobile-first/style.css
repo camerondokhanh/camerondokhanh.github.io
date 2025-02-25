@@ -30,7 +30,7 @@ img {
 header {
 	display: grid;
 	grid-template-columns: 1fr 1.5fr;
-	background: rgb(174, 174, 174);
+	background: rgb(204, 204, 204);
 	padding: 1rem 0.5rem;
 	}
 
