@@ -2,20 +2,37 @@
 
 html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;}
 
-
 img {
 	width: 100%;
 	display: block;
 }
 
+
+figure img {
+	aspect-ratio: 1 / 1; 
+	object-fit: cover;  
+}
+
+figure video {
+	width: 100%;
+	height: auto;         
+	display: block;
+	object-fit: cover;    
+  }
+  
+video {
+	width: 100%;
+	display: block;
+}
 div.container, div.home-container {
 	max-width: 40em;
 	margin: auto;
 }
 
+
 h1 {
 	max-width: 7em;
-	margin: 1em 0.5em;
+	margin: 1em 10em 2em;
 }
 
 a {
@@ -33,41 +50,45 @@ nav {
 }
 
 nav ul li a {
-	font-family: sans-serif;
-	font-weight: bold;
-	color: rgb(89, 115, 150);
+	font-family: "helvetica-neue-lt-pro", sans-serif;
+	font-weight: 700;
+	font-style: normal;
 }
 
 
 h2 {
-	color: rgb(89, 115, 150);
-	font-family: serif;
+	color: rgb(0, 0, 0);
 	font-size: 2.5em;
-	font-weight: bold;
-	margin: 0.1em 0.2em 0;
+	font-family: "big-caslon-fb", serif;
+	font-weight: 700;
+	font-style: normal;
+	margin: 0 0.2em;
 }
 
 p {
-	margin: 0 0.5em 2em;
-	font-family: sans-serif;
+	margin: 0.5em 0.5em 2em;
+	font-family: "helvetica-neue-lt-pro", sans-serif;
+	font-weight: 400;
+	font-style: normal;
 }
 
 section.secondarystory h2 {
-	font-size: 1.7em;
+	font-size: 1.5em;
 	margin: 0.3em 0.3em 0.1em;
 }
 
 section.tertiarystory h2 {
-	border-top: 1px solid rgb(89, 115, 150);
+	border-top: 1px solid rgb(0, 0, 0);
 	padding-top: 0.5em;
 	font-size: 1.1em;
-	margin: 0 0.50em 0.2em;
+	margin: 0em 0.50em 0.2em;
+	font-weight: 800;
 }
 
 
 footer {
-	color: #e3e3e3;
-	background-color: rgb(89, 115, 150);
+	border-top: 1.5px solid #000000;
+	color: #000000;
 	padding: 0.1em;
 	height: 3em;
 	line-height: 3em;
@@ -79,13 +100,17 @@ footer {
 
 figcaption {
 	margin: 0.3em 0.5em 2em;
-	font-family: sans-serif;
+	font-family: "big-caslon-fb", serif;
+	font-weight: 400;
 	font-style: italic;
-	color: #959595;
+	color: #878787;
 }
+
 
 article h2 {
 	margin-bottom: 0.5em;
+	font-size: 2.5em;
+	margin: 0.1em 0.2em 0;
 }
 
 article p {
@@ -93,13 +118,12 @@ article p {
 }
 
 aside {
-	background-color: rgb(204, 208, 251);
-	padding-top: 1em;
+	padding-top: 0em;
 	margin-top: 0;
 }
 
 aside h2 {
-	font-size: 1.1em;
+	font-size: 1.2em;
 	margin: 0.3em 0.50em 0.2em;
 }
 
@@ -119,6 +143,7 @@ aside p {
 img, h1, a, nav ul li, nav, nav ul li a, h2, p, section.secondarystory h2, section.tertiarystory h2, figcaption, article h2, article p, aside, aside h2, aside p {
     margin-left: 0;
 }
+
 }
 
 @media only screen and (min-width: 60em) {
@@ -127,7 +152,7 @@ img, h1, a, nav ul li, nav, nav ul li a, h2, p, section.secondarystory h2, secti
 	  padding: 0 1em;
 	  display: grid;
 	  grid-template-columns: 3fr 1fr;
-	  grid-gap: 1em;
+	  grid-gap: 4em;
 	}
 
 	div.container {
@@ -135,17 +160,18 @@ img, h1, a, nav ul li, nav, nav ul li a, h2, p, section.secondarystory h2, secti
 		padding: 0 1em;
 		display: grid;
 		grid-template-columns: 3fr 1fr;
-		grid-gap: 1em;
+		grid-gap: 4em;
 	  }
 
 	header, footer {
 		grid-column: 1/3;
 	}
 
+
 	div.home-container main {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
-		grid-gap: 1em;
+		grid-gap: 4em;
 	}
 
 	div.home-container aside {
