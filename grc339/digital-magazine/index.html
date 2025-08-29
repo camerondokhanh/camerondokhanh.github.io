@@ -1,108 +1,126 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="style.css" />
-		<title>42°</title>
-		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-		<meta http-equiv="Pragma" content="no-cache" />
-		<meta http-equiv="Expires" content="0" />
-		<link rel="stylesheet" href="https://use.typekit.net/seo2dqh.css" />
-	</head>
-	<body>
-		<div class="gallery-container">
-			<header>
-				<h1>
-					<a href="index.html"><img src="logo.svg" alt="42 Degrees Logo." /></a>
-				</h1>
-				<nav>
-					<ul>
-						<li><a href="#">Design</a></li>
-						<li><a href="#">Interiors</a></li>
-						<li><a href="#">History</a></li>
-						<li><a href="photogallery.html">Gallery</a></li>
-						<li><a href="newsletter.html">Newsletter</a></li>
-					</ul>
-				</nav>
-			</header>
-
-			<div class="gallery">
-				<input type="radio" name="item" id="photo1" checked="checked" />
-				<input type="radio" name="item" id="photo2" />
-				<input type="radio" name="item" id="photo3" />
-				<input type="radio" name="item" id="photo4" />
-				<input type="radio" name="item" id="photo5" />
-				<input type="radio" name="item" id="photo6" />
-				<input type="radio" name="item" id="photo7" />
-				<input type="radio" name="item" id="photo8" />
-
-				<main>
-					<figure>
-						<img src="gallery-1.jpeg" alt="Oblique Rung chair – angular metal with offset planes." />
-						<figcaption>Oblique Rung</figcaption>
-					</figure>
-					<figure>
-						<img src="gallery-2.jpeg" alt="Parcel chair – interlocking folded panels in white and green." />
-						<figcaption>Parcel</figcaption>
-					</figure>
-					<figure>
-						<img src="gallery-3.jpeg" alt="Static Current chair – zigzag stepped cantilever form." />
-						<figcaption>Static Current</figcaption>
-					</figure>
-					<figure>
-						<img src="gallery-4.jpeg" alt="Grain Sentinel chair – blocky wood construction with cutouts." />
-						<figcaption>Grain Sentinel</figcaption>
-					</figure>
-					<figure>
-						<img src="gallery-5.jpg" alt="Eclipse chair – sculptural form with arched legs and domed back." />
-						<figcaption>Eclipse</figcaption>
-					</figure>
-					<figure>
-						<img src="gallery-6.jpg" alt="Anchor Lounge chair – leather cushions on an exposed wooden frame." />
-						<figcaption>Anchor Lounge</figcaption>
-					</figure>
-					<figure>
-						<img src="gallery-7.jpeg" alt="Drift Slab chair – curved lounge resembling a concrete wave." />
-						<figcaption>Drift Slab</figcaption>
-					</figure>
-					<figure>
-						<img src="gallery-8.jpeg" alt="Totem Loop chair – tubular upholstered chair with looped arms." />
-						<figcaption>Totem Loop</figcaption>
-					</figure>
-				</main>
-
-				<nav>
-					<label for="photo1">
-						<img src="gallery-1.jpeg" alt="Oblique Rung chair – angular metal with offset planes." />
-					</label>
-					<label for="photo2">
-						<img src="gallery-2.jpeg" alt="Parcel chair – interlocking folded panels in white and green." />
-					</label>
-					<label for="photo3">
-						<img src="gallery-3.jpeg" alt="Static Current chair – zigzag stepped cantilever form." />
-					</label>
-					<label for="photo4">
-						<img src="gallery-4.jpeg" alt="Grain Sentinel chair – blocky wood construction with cutouts." />
-					</label>
-					<label for="photo5">
-						<img src="gallery-5.jpg" alt="Eclipse chair – sculptural form with arched legs and domed back." />
-					</label>
-					<label for="photo6">
-						<img src="gallery-6.jpg" alt="Anchor Lounge chair – leather cushions on an exposed wooden frame." />
-					</label>
-					<label for="photo7">
-						<img src="gallery-7.jpeg" alt="Drift Slab chair – curved lounge resembling a concrete wave." />
-					</label>
-					<label for="photo8">
-						<img src="gallery-8.jpeg" alt="Totem Loop chair – tubular upholstered chair with looped arms." />
-					</label>
-				</nav>
-			</div>
-
-			<footer>
-				<p>All rights reserved.</p>
-			</footer>
-		</div>
-	</body>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="stylesheet" href="style.css">
+      <title>42°</title>
+      <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+      <meta http-equiv="Pragma" content="no-cache" />
+      <meta http-equiv="Expires" content="0" />
+      <link rel="stylesheet" href="https://use.typekit.net/seo2dqh.css"/>
+   </head>
+   <body>
+      <div class="home-container">
+         <header>
+            <h1><a href="index.html"><img src="logo.svg" alt="42 Degrees Logo."></a></h1>
+            <nav>
+               <ul>
+                  <li><a href="#">Design</a></li>
+                  <li><a href="#">Interiors</a></li>
+                  <li><a href="#">History</a></li>
+                  <li><a href="photogallery.html">Gallery</a></li>
+                  <li><a href="newsletter.html">Newsletter</a></li>
+               </ul>
+            </nav>
+         </header>
+         <main>
+            <section class="mainstory"> 
+               <a href="mainstory.html">
+                  <figure> <video autoplay loop muted playsinline aria-label="Looping video of a chair.">
+                     <source src="chair-1.mp4" type="video/mp4">
+                     Sorry, your browser doesn’t support embedded videos.
+                   </video></figure>
+                  <h2>The Shard Chair by Elias Hartmann</h2>
+                  <p>Hartmann’s Shard Chair blurs the line between sculpture and function. Defined by sharp geometry and muted restraint, it reflects his process of moving between hand prototypes and digital modeling to create a design that challenges expectation while remaining unexpectedly comfortable.</p>
+               </a>
+            </section>
+            <section class="secondarystory">
+               <a href="#">
+                  <figure><img src="marcelBreuer.jpeg" alt="Marcel Breuer sitting in his work studio."></figure>
+                  <h2>Marcel Breuer and the Cantilever Revolution</h2>
+                  <p>Breuer’s use of tubular steel redefined what a chair could be. By removing the back legs, he introduced weightlessness and movement into modern interiors. This piece looks at how his cantilever designs challenged tradition and why they remain icons of modernist design.</p>
+               </a>
+            </section>
+            <section class="secondarystory">
+               <a href="#">
+                  <figure>
+                     <img src="chair-2.jpg" atl="Raw sketches of the chair.">
+                  </figure>
+                  <h2>In the Studio: Between Wood and Algorithm</h2>
+                  <p>This article looks at how designers merge traditional craft with digital tools. From hand-carved forms to generative code, it traces the tension between wood as a material and the algorithm as a process, showing how the two reshape the language of industrial design.</p>
+               </a>
+            </section>
+            <section class="secondarystory">
+               <a href="#">
+                  <figure>
+                     <img src="chair-3.jpg" atl="Closeup of the curve of the sustainable chair.">
+                  </figure>
+                  <h2>Circular Design: Reuse as Aesthetic</h2>
+                  <p>A look at how designers turn reuse into beauty. Circular design frames sustainability not as compromise but as an aesthetic, reshaping how objects live through time and space.</p>
+               </a>
+            </section>
+            <section class="secondarystory">
+               <a href="#">
+                  <figure>
+                     <img src="florenceKnoll.png" atl="Florence Knoll working with architects in their New York office.">
+                  </figure>
+                  <h2>Florence Knoll and the Architecture of Seating</h2>
+                  <p>Knoll’s approach treated furniture as part of architecture itself. Her seating carried the same clarity and rigor as her buildings, reshaping the modern workplace and its culture.</p>
+               </a>
+            </section>
+            <section class="secondarystory">
+               <a href="#">
+                  <figure>
+                     <img src="chair-4.jpg" atl="The Foldline 07 in a minamilist room.">
+                  </figure>
+                  <h2>The Foldline 07: Origami in Steel</h2>
+                  <p>This imagined chair folds metal like paper. Sharp lines and engineered creases turn steel into a flexible form, blurring the boundary between structure and sculpture.</p>
+               </a>
+            </section>
+            </main>
+            <aside>
+            <section class="tertiarystory">
+               <a href="#">
+                  <h2>Drawn by Hand, Cut by CNC</h2>
+                  <p>Exploring the meeting point of sketch and machine. The article follows how ideas begin in graphite and end in precision-milled components.</p>
+               </a>
+            </section>
+            <section class="tertiarystory">
+               <a href="#">
+                  <h2>Gerrit Rietveld and the Red-Blue Experiment</h2>
+                  <p>A deep dive into Rietveld’s bold geometry. The Red-Blue Chair distilled De Stijl ideals into furniture that was radical in both form and color.</p>
+               </a>
+            </section>
+            <section class="tertiarystory">
+               <a href="#">
+                  <h2>Corporate Seating and the Politics of Comfort</h2>
+                  <p>This feature examines how chairs shape power in the workplace. From boardrooms to open offices, seating reflects hierarchy, equality, and the politics of comfort.</p>
+               </a>
+            </section>
+            <section class="tertiarystory">
+               <a href="#">
+                  <h2>Driftwood No. 3: Nature as Prototype</h2>
+                  <p>A fictional piece that reimagines found wood as design. Driftwood becomes the mold, guiding the form and reminding us that nature often designs first.</p>
+               </a>
+            </section>
+            <section class="tertiarystory">
+               <a href="#">
+                  <h2>A Chair for No One</h2>
+                  <p>A conceptual exploration of uselessness. This chair refuses occupation, asking whether function is necessary for meaning in industrial design.</p>
+               </a>
+            </section>
+            <section class="tertiarystory">
+               <a href="#">
+                  <h2>How Airports Taught Us to Wait</h2>
+                  <p>An investigation of seating in transit. Airport chairs have defined the architecture of waiting, shaping how bodies and time are managed in public space.</p>
+               </a>
+            </section>
+            
+            </aside>
+         <footer>
+            <p>All rights reserved.</p>
+         </footer>
+      </div>
+   </body>
 </html>
